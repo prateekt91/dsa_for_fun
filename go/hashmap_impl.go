@@ -139,4 +139,19 @@ func main() {
 		fmt.Println("Key 'Prayas' not found in the hash map.")
 	}
 
+	removed := hashMap.Remove("Rahul")
+	if removed {
+		fmt.Println("Key 'Rahul' removed successfully.")
+	} else {
+		fmt.Println("Key 'Rahul' not found in the hash map.")
+	}
+
+	fmt.Println(hashMap)
+
+	value, found = hashMap.Get("Prateek")
+	if found {
+		fmt.Println("Value for key 'Prateek': ", value)
+	} else {
+		fmt.Println("Key 'Prateek' not found in the hash map.")
+	}
 }
